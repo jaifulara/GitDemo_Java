@@ -26,6 +26,8 @@ public class ErrorValidation extends BaseTest
 		
 		System.out.println("Test is passed");
 		System.out.println("Oh Nice");
+		System.out.println("Oh Nice");
+		
 	}
 		
 //	@Test

@@ -73,7 +73,7 @@ public class StandAloneTest {
 		
 		Assert.assertTrue(confirmMsg.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
-		
+		System.out.println("Oh Nice, this also works");
 		
 
 	}
