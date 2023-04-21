@@ -29,7 +29,17 @@ public class ErrorValidation extends BaseTest
 		System.out.println("Oh Nice");
 		
 	}
+	
+	public void LoginErrorValidation2() throws InterruptedException, IOException 
+	{		
+		landingPage.loginApplication("anshika@gmail.com","Iamkin000");
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());	
 		
+		System.out.println("Test is passed");
+		System.out.println("Oh Nice");
+		System.out.println("Oh Nice");
+		
+	}
 //	@Test
 //	public void ProductErrorValidation() throws InterruptedException, IOException 
 //	{	

@@ -53,6 +53,14 @@ public class SubmitOrderTest extends BaseTest {
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(prodName));
 	}
 	
+	@Test (dependsOnMethods= {"submitOrder"})
+	public void OrderHistoryTest2()
+	{
+		ProductCatalogue prodCatalogue = landingPage.loginApplication("anshika@gmail.com","Iamking@000");
+		OrderPage ordersPage = prodCatalogue.goToOrdersPage();
+		Assert.assertTrue(ordersPage.VerifyOrderDisplay(prodName));
+	}
+	
 	
 	@DataProvider
 	public Object[][] getData() throws IOException
